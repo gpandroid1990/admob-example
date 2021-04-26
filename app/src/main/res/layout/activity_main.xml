@@ -41,11 +41,13 @@
         android:id="@+id/native_flow_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="原生高级广告单元信息流" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/open_ad_view"
         android:layout_width="match_parent"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         android:text="开屏广告" />
 </LinearLayout>

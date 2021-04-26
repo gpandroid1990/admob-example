@@ -20,7 +20,7 @@ class AdmobApplication : Application(), Application.ActivityLifecycleCallbacks {
     private var mForegroundActivityCount = 0
     private var lastTime: Long = 0
     private var isInbackground = false
-    private val TIME = 5
+    private val TIME = 1
 
     companion object {
         lateinit var instance: Application
@@ -56,6 +56,7 @@ class AdmobApplication : Application(), Application.ActivityLifecycleCallbacks {
     }
 
     override fun onActivityStarted(activity: Activity) {
+        // 当应用是从后台启动时，如果后天停留时间大于我们设定的时间，则启动开屏页面，增加广告展示
         if (isInbackground && lastTime != 0L && (System.currentTimeMillis() - lastTime > TIME * 60 * 1000)) {
             if (activity !is SplashActivity) {
                 val intent = Intent(this, SplashActivity::class.java)
@@ -78,7 +79,6 @@ class AdmobApplication : Application(), Application.ActivityLifecycleCallbacks {
     }
 
     override fun onActivityStopped(activity: Activity) {
-//        LogUtils.d(activity::class.java.simpleName)
         mForegroundActivityCount--
         if (mForegroundActivityCount == 0) {
             lastTime = System.currentTimeMillis()

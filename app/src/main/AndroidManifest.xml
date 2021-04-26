@@ -12,6 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Admobexample">
+        <activity android:name=".ads.NativeActivity"></activity>
+        <activity android:name=".ads.RewardedActivity" />
+        <activity
+            android:name=".ads.RewardedInterstitialAdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ads.InterstitialActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ads.BannerActivity"
             android:screenOrientation="portrait" />

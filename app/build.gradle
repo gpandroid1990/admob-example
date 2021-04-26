@@ -21,15 +21,24 @@ android {
     }
 
     buildTypes {
-        debug{
+        debug {
             buildConfigField "String", "ADMOB_BANNER_ADS", "\"ca-app-pub-3940256099942544/6300978111\""
             buildConfigField "String", "ADMOB_INTERSTITIAL_ADS", "\"ca-app-pub-3940256099942544/1033173712\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_REWARD_ADS", "\"ca-app-pub-3940256099942544/5354046379\""
+            buildConfigField "String", "ADMOB_REWARD_ADS", "\"ca-app-pub-3940256099942544/5224354917\""
             buildConfigField "String", "ADMOB_OPEN_ADS", "\"ca-app-pub-3940256099942544/3419835294\""
+            buildConfigField "String", "ADMOB_NATIV_ADS", "\"ca-app-pub-3940256099942544/2247696110\""
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
+            // 使用在admob 申请的正式id 替换如下的
+            buildConfigField "String", "ADMOB_BANNER_ADS", "\"ca-app-pub-3940256099942544/6300978111\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_ADS", "\"ca-app-pub-3940256099942544/1033173712\""
+            buildConfigField "String", "ADMOB_INTERSTITIAL_REWARD_ADS", "\"ca-app-pub-3940256099942544/5354046379\""
+            buildConfigField "String", "ADMOB_REWARD_ADS", "\"ca-app-pub-3940256099942544/5224354917\""
+            buildConfigField "String", "ADMOB_OPEN_ADS", "\"ca-app-pub-3940256099942544/3419835294\""
+            buildConfigField "String", "ADMOB_NATIV_ADS", "\"ca-app-pub-3940256099942544/2247696110\""
         }
     }
     compileOptions {
