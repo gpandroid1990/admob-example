@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_banner" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/interstitial_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插页式广告" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/interstitial_reward_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插页式激励广告" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reward_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="激励广告" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/native_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原生高级广告单元" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/native_flow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原生高级广告单元信息流" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/open_ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开屏广告" />
+</LinearLayout>

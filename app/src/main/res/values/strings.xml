@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">admob-example</string>
+    <string name="str_banner">banner 广告</string>
+</resources>
