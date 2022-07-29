@@ -12,19 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Admobexample">
-        <activity android:name=".ads.NativeActivity"></activity>
-        <activity android:name=".ads.RewardedActivity" />
+        <activity
+            android:name=".ads.NativeActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".ads.RewardedActivity"
+            android:exported="false" />
         <activity
             android:name=".ads.RewardedInterstitialAdActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ads.InterstitialActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ads.BannerActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".SplashActivity"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +47,7 @@
 
         <activity
             android:name=".MainActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
     </application>
 

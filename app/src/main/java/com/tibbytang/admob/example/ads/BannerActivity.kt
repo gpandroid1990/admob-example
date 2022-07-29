@@ -23,7 +23,7 @@ class BannerActivity : AppCompatActivity() {
 
         val adView = AdView(this)
         // 设置广告大小
-        adView.adSize = AdSize.BANNER
+        adView.setAdSize(AdSize.BANNER)
         // 设置id
         adView.adUnitId = BuildConfig.ADMOB_BANNER_ADS
         adView.loadAd(AdRequest.Builder().build())

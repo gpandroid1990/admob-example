@@ -80,7 +80,7 @@ class SplashActivity : ScopedAppActivity() {
         val request: AdRequest = AdRequest.Builder().build()
         AppOpenAd.load(
             this, BuildConfig.ADMOB_OPEN_ADS, request,
-            AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT, loadCallback
+            AppOpenAd.APP_OPEN_AD_ORIENTATION_PORTRAIT, loadCallback as AppOpenAd.AppOpenAdLoadCallback
         )
     }
 

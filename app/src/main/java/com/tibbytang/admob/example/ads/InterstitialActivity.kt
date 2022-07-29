@@ -61,8 +61,8 @@ class InterstitialActivity : ScopedAppActivity() {
                         XLog.d("Ad was dismissed.")
                     }
 
-                    override fun onAdFailedToShowFullScreenContent(adError: AdError?) {
-                        XLog.d("Ad failed to show.")
+                    override fun onAdFailedToShowFullScreenContent(p0: AdError) {
+                        super.onAdFailedToShowFullScreenContent(p0)
                     }
 
                     override fun onAdShowedFullScreenContent() {
