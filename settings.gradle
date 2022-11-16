@@ -1,2 +1,4 @@
+println("setting.gralde start")
 include ':app'
 rootProject.name = "admob-example"
+println("setting.gralde end")

@@ -48,6 +48,26 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+//    applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+//            output.processResources.doFirst { pm ->
+//                String manifestPath = output.processResources.manifestFile
+//                def manifestContent = file(manifestPath).getText()
+//                println("################################")
+//                println(manifestContent)
+//                def flag = manifestContent.contains("android.permission.QUERY_ALL_PACKAGES")
+//                println("################################")
+//                println(flag)
+//                println("################################")
+//                def flag1 = manifestContent.contains('<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />')
+//                println(flag1)
+//                println("################################")
+//                manifestContent = manifestContent.replace('<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />', '')
+////                println("￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥ manifestContent:" + manifestContent)
+//                file(manifestPath).write(manifestContent)
+//            }
+//        }
+//    }
 }
 
 dependencies {
@@ -61,7 +81,7 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
 
-    implementation 'com.google.android.gms:play-services-ads:21.1.0'
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
 
     implementation 'com.elvishew:xlog:1.6.1'
 
